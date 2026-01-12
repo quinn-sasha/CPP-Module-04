@@ -1,6 +1,6 @@
+#include <iostream>
 #include "Cat.hpp"
 #include "Dog.hpp"
-#include <iostream>
 
 int main() {
   // Test to show abstract class cannot be instantiated

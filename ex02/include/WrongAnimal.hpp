@@ -1,20 +1,20 @@
-#ifndef EX02_WRONGANIMAL_HPP_
-#define EX02_WRONGANIMAL_HPP_
+#ifndef EX02_INCLUDE_WRONGANIMAL_HPP_
+#define EX02_INCLUDE_WRONGANIMAL_HPP_
 
 #include <string>
 
 class WrongAnimal {
-protected:
+ protected:
   std::string type;
 
-public:
+ public:
   WrongAnimal();
   WrongAnimal(const WrongAnimal& other);
   WrongAnimal& operator=(const WrongAnimal& other);
   virtual ~WrongAnimal();
 
-  void makeSound() const; // This should be virtual!
+  void makeSound() const;  // This should be virtual!
   std::string getType() const;
 };
 
-#endif // EX02_WRONGANIMAL_HPP_
+#endif  // EX02_INCLUDE_WRONGANIMAL_HPP_

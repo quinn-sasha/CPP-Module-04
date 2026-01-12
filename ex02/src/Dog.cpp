@@ -1,7 +1,7 @@
+#include <iostream>
 #include "Dog.hpp"
 #include "Animal.hpp"
 #include "Brain.hpp"
-#include <iostream>
 
 Dog::Dog() : Animal() {
   std::cout << "Dog constructor called" << std::endl;
