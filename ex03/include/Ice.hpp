@@ -1,18 +1,18 @@
-#ifndef EX03_ICE_HPP_
-#define EX03_ICE_HPP_
+#ifndef EX03_INCLUDE_ICE_HPP_
+#define EX03_INCLUDE_ICE_HPP_
 
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
 
 class Ice : public AMateria {
-public:
+ public:
   Ice();
   Ice(const Ice& ohter);
   Ice& operator=(const Ice& other);
   ~Ice();
 
-  AMateria* clone() const;      // override
-  void use(ICharacter& target); // override
+  AMateria* clone() const;       // override
+  void use(ICharacter& target);  // override
 };
 
-#endif // EX03_ICE_HPP_
+#endif  // EX03_INCLUDE_ICE_HPP_

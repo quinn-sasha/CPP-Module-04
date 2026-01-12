@@ -1,10 +1,10 @@
+#include <iostream>
+#include <cassert>
 #include "AMateria.hpp"
 #include "Character.hpp"
 #include "Cure.hpp"
 #include "Ice.hpp"
 #include "MateriaSource.hpp"
-#include <cassert>
-#include <iostream>
 
 void test_42_requirements() {
   IMateriaSource* src = new MateriaSource();
@@ -34,18 +34,18 @@ void test_character() {
   player2 = player1;
   player2.use(0, player1);
 
-  player1.unequip(-100);   // Invalid index
-  player1.unequip(100);    // Invalid index
-  player1.unequip(0);      // Valid
-  player1.unequip(0);      // No materia
-  player1.use(0, player2); // No materia
+  player1.unequip(-100);    // Invalid index
+  player1.unequip(100);     // Invalid index
+  player1.unequip(0);       // Valid
+  player1.unequip(0);       // No materia
+  player1.use(0, player2);  // No materia
   player2.use(0, player1);
 
   for (int i = 0; i < 3; i++) {
     player2.equip(new Cure);
   }
   AMateria* tmp = new Cure;
-  player2.equip(tmp); // Cannot hold more materias
+  player2.equip(tmp);  // Cannot hold more materias
   delete tmp;
 }
 
@@ -58,13 +58,11 @@ void test_materia_source() {
     source->learnMateria(new Cure);
   }
   AMateria* tmp = new Cure;
-  source->learnMateria(tmp); // Cannot learn more materias
+  source->learnMateria(tmp);  // Cannot learn more materias
   delete tmp;
 
   delete source;
 }
-
-// --- 実行用 main ---
 
 int main() {
   std::cout << "========================================" << std::endl;

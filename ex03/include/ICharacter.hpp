@@ -1,11 +1,11 @@
-#ifndef EX03_ICHARACTER_HPP_
-#define EX03_ICHARACTER_HPP_
+#ifndef EX03_INCLUDE_ICHARACTER_HPP_
+#define EX03_INCLUDE_ICHARACTER_HPP_
 
-#include "AMateria.hpp"
 #include <string>
+#include "AMateria.hpp"
 
 class ICharacter {
-public:
+ public:
   virtual ~ICharacter() {}
   virtual const std::string& getName() const = 0;
   virtual void equip(AMateria* materia) = 0;
@@ -13,4 +13,4 @@ public:
   virtual void use(int materia_i, ICharacter& target) = 0;
 };
 
-#endif // EX03_ICHARACTER_HPP_
+#endif  // EX03_INCLUDE_ICHARACTER_HPP_

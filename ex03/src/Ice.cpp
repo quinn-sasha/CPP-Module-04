@@ -1,6 +1,6 @@
+#include <iostream>
 #include "Ice.hpp"
 #include "AMateria.hpp"
-#include <iostream>
 
 Ice::Ice() : AMateria("ice") {
   std::cout << "Ice constructor called" << std::endl;

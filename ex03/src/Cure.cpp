@@ -1,7 +1,7 @@
+#include <iostream>
 #include "Cure.hpp"
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
-#include <iostream>
 
 Cure::Cure() : AMateria("cure") {
   std::cout << "Cure constructor called" << std::endl;

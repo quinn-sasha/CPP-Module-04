@@ -1,7 +1,7 @@
-#include "AMateria.hpp"
-#include "ICharacter.hpp"
 #include <iostream>
 #include <string>
+#include "AMateria.hpp"
+#include "ICharacter.hpp"
 
 AMateria::AMateria() : type_("unknown") {
   std::cout << "AMateria constructor called" << std::endl;

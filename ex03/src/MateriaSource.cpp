@@ -1,10 +1,11 @@
-#include "MateriaSource.hpp"
 #include <iostream>
+#include <string>
+#include "MateriaSource.hpp"
 
 MateriaSource::MateriaSource() : num_materias_(0) {
   std::cout << "MateriaSource constructor called" << std::endl;
   for (int i = 0; i < kMaxMaterias; i++) {
-    materias_[i] = nullptr;
+    materias_[i] = 0;
   }
 }
 

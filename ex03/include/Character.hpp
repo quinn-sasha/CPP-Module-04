@@ -1,9 +1,9 @@
-#ifndef EX03_CHARACTER_HPP_
-#define EX03_CHARACTER_HPP_
+#ifndef EX03_INCLUDE_CHARACTER_HPP_
+#define EX03_INCLUDE_CHARACTER_HPP_
 
+#include <string>
 #include "AMateria.hpp"
 #include "ICharacter.hpp"
-#include <string>
 
 class Character : public ICharacter {
   std::string name_;
@@ -17,17 +17,17 @@ class Character : public ICharacter {
   static const int kMaxDisposedMaterias = 1000;
   AMateria* materias_to_delete_[kMaxDisposedMaterias];
 
-public:
+ public:
   Character();
-  Character(const std::string& name);
+  explicit Character(const std::string& name);
   Character(const Character& other);
   Character& operator=(const Character& other);
   ~Character();
 
-  const std::string& getName() const;          // override
-  void equip(AMateria* materia);               // override
-  void unequip(int materia_i);                 // override
-  void use(int materia_i, ICharacter& target); // override
+  const std::string& getName() const;           // override
+  void equip(AMateria* materia);                // override
+  void unequip(int materia_i);                  // override
+  void use(int materia_i, ICharacter& target);  // override
 };
 
-#endif // EX03_CHARACTER_HPP_
+#endif  // EX03_INCLUDE_CHARACTER_HPP_

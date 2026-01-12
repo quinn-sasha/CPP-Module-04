@@ -1,13 +1,13 @@
-#include "Character.hpp"
-#include "AMateria.hpp"
 #include <iostream>
 #include <string>
+#include "Character.hpp"
+#include "AMateria.hpp"
 
 Character::Character()
     : name_("unknown"), num_materias_(0), num_disposed_materias_(0) {
 
   for (int i = 0; i < kMaxMaterias; i++) {
-    materia_inventory_[i] = nullptr;
+    materia_inventory_[i] = 0;
   }
   std::cout << "Character constructor called" << std::endl;
 }
@@ -16,7 +16,7 @@ Character::Character(const std::string& name)
     : name_(name), num_materias_(0), num_disposed_materias_(0) {
 
   for (int i = 0; i < kMaxMaterias; i++) {
-    materia_inventory_[i] = nullptr;
+    materia_inventory_[i] = 0;
   }
   std::cout << "Character constructor called" << std::endl;
 }
