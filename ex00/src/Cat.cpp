@@ -1,9 +1,8 @@
-#include "Cat.hpp"
 #include <iostream>
+#include "Cat.hpp"
 
 Cat::Cat() : Animal() {
   std::cout << "Cat constructor called" << std::endl;
-
   type = "Cat";
 }
 
@@ -15,7 +14,7 @@ Cat& Cat::operator=(const Cat& other) {
   if (this == &other) {
     return *this;
   }
-  type = other.type;
+  Animal::operator=(other);
   return *this;
 }
 

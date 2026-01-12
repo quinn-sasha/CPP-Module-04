@@ -2,14 +2,15 @@
 #define EX00_INCLUDE_CAT_HPP_
 
 #include "Animal.hpp"
+
 class Cat : public Animal {
-public:
+ public:
   Cat();
   Cat(const Cat& other);
   Cat& operator=(const Cat& other);
   ~Cat();
 
-  void makeSound() const; // override
+  void makeSound() const;  // override
 };
 
-#endif // EX00_INCLUDE_CAT_HPP_
+#endif  // EX00_INCLUDE_CAT_HPP_

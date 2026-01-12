@@ -4,13 +4,13 @@
 #include "Animal.hpp"
 
 class Dog : public Animal {
-public:
+ public:
   Dog();
   Dog(const Dog& other);
   Dog& operator=(const Dog& other);
   ~Dog();
 
-  void makeSound() const; // override
+  void makeSound() const;  // override
 };
 
-#endif // EX00_INCLUDE_DOG_HPP_
+#endif  // EX00_INCLUDE_DOG_HPP_

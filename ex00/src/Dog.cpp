@@ -1,10 +1,9 @@
+#include <iostream>
 #include "Dog.hpp"
 #include "Animal.hpp"
-#include <iostream>
 
 Dog::Dog() : Animal() {
   std::cout << "Dog constructor called" << std::endl;
-
   type = "Dog";
 }
 
@@ -16,7 +15,7 @@ Dog& Dog::operator=(const Dog& other) {
   if (this == &other) {
     return *this;
   }
-  type = other.type;
+  Animal::operator=(other);
   return *this;
 }
 
