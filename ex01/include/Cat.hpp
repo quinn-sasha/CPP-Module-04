@@ -7,13 +7,13 @@
 class Cat : public Animal {
   Brain* brain_ptr;
 
-public:
+ public:
   Cat();
   Cat(const Cat& other);
   Cat& operator=(const Cat& other);
   ~Cat();
 
-  void makeSound() const; // override
+  void makeSound() const;  // override
 };
 
-#endif // EX01_INCLUDE_CAT_HPP_
+#endif  // EX01_INCLUDE_CAT_HPP_

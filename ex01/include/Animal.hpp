@@ -4,10 +4,10 @@
 #include <string>
 
 class Animal {
-protected:
+ protected:
   std::string type;
 
-public:
+ public:
   Animal();
   Animal(const Animal& other);
   Animal& operator=(const Animal& other);
@@ -17,4 +17,4 @@ public:
   std::string getType() const;
 };
 
-#endif // EX01_INCLUDE_ANIMAL_HPP_
+#endif  // EX01_INCLUDE_ANIMAL_HPP_

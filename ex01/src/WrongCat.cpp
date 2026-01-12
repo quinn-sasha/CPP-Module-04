@@ -1,5 +1,5 @@
-#include "WrongCat.hpp"
 #include <iostream>
+#include "WrongCat.hpp"
 
 WrongCat::WrongCat() : WrongAnimal() {
   std::cout << "WrongCat constructor called" << std::endl;

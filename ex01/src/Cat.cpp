@@ -1,6 +1,6 @@
+#include <iostream>
 #include "Cat.hpp"
 #include "Brain.hpp"
-#include <iostream>
 
 Cat::Cat() : Animal() {
   std::cout << "Cat constructor called" << std::endl;

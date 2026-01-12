@@ -1,5 +1,6 @@
-#include "Animal.hpp"
 #include <iostream>
+#include <string>
+#include "Animal.hpp"
 
 Animal::Animal() : type("Unknown") {
   std::cout << "Animal constructor called" << std::endl;
